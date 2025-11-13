@@ -1,0 +1,11 @@
+.venv
+.env
+.vscode
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Cache directories
+.cache/
+*.log
