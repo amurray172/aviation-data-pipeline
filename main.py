@@ -1,7 +1,8 @@
 
 from dotenv import load_dotenv
-from extract.extractor import get_data
 import logging
+
+from load.load_contacts import load_contacts
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -10,10 +11,7 @@ logger = logging.getLogger(__name__)
 load_dotenv() 
 
 def main():
-    contacts = get_data()
-    for contact in contacts:
-        logger.info(contact)
-
+    load_contacts()
 
 if __name__ == "__main__":
     main()
